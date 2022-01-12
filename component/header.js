@@ -9,11 +9,11 @@ const header = {
             <div class="box flex py-3 bg-orange-600">
                 <div class="menu ">
                     <ul class="flex flex-nowrap ">
-                        <li class="mx-5"><a href="" class="">Trang chủ</a></li>
-                        <li class="mx-5"><a href="" class="">Đào tạo</a></li>
-                        <li class="mx-5"><a href="" class="">Hoạt động</a></li>
-                        <li class="mx-5"><a href="" class="">Sinh viên</a></li>
-                        <li class="mx-5"><a href="" class="">Liên hệ</a></li>
+                        <li class="mx-5"><a href="/" class="">Trang chủ</a></li>
+                        <li class="mx-5"><a href="/edu" class="">Đào tạo</a></li>
+                        <li class="mx-5"><a href="/action" class="">Hoạt động</a></li>
+                        <li class="mx-5"><a href="/student" class="">Sinh viên</a></li>
+                        <li class="mx-5"><a href="/call" class="">Liên hệ</a></li>
                     </ul>
                 </div>
                 <!-- end menu -->

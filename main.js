@@ -1,10 +1,13 @@
 import Navigo from "navigo";
 import home from "./home/home";
-import products from "./products/products";
-import pages from "./pages/pages";
+import action from "./action-page/action";
+import edu from "./edu-page/edu";
+import student from "./student-page/student";
+import call from "./call-page/call";
 import header from "./component/header";
 import footer from "./component/footer";
 
+// { linksSelector: "a" } không load lại trang
 const router = new Navigo("/", { linksSelector: "a" });
 const print = (content) => {
     document.getElementById("header").innerHTML = header.render();
@@ -16,11 +19,17 @@ router.on({
     "/": () => {
         print(home.render());
     },
-    "/products": () => {
-        print(products.render());
+    "/edu": () => {
+        print(edu.render());
     },
-    "/pages": () => {
-        print(pages.render());
+    "/action": () => {
+        print(action.render());
+    },
+    "/student": () => {
+        print(student.render());
+    },
+    "/call": () => {
+        print(call.render());
     },
 });
 router.resolve();
