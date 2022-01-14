@@ -14,7 +14,9 @@ const header = {
         <!-- end side bar -->
         <div class="header">
             <div class="logo  h-20 bg-sky-700 py-2">
-                <img src="./img/logo.png" alt="" class="mx-auto">
+            ${dataBanner.map((post) => /* html */ `
+                   <img src="${post.logo}" alt="" class="mx-auto w-40" >
+            `)}
             </div>
             <!-- end logo -->
             <div class="box flex py-3 bg-orange-600">
