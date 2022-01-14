@@ -1,11 +1,14 @@
 import Navigo from "navigo";
-import home from "./home/home";
-import action from "./action-page/action";
-import edu from "./edu-page/edu";
-import student from "./student-page/student";
-import call from "./call-page/call";
-import header from "./component/header";
-import footer from "./component/footer";
+import home from "./src/page/home";
+import action from "./src/page/action";
+import edu from "./src/page/edu";
+import student from "./src/page/student";
+import call from "./src/page/call";
+import header from "./src/component/header";
+import footer from "./src/component/footer";
+import signin from "./src/page/sign_in";
+import signup from "./src/page/sign_up";
+import dashboard from "./src/page/dashboard";
 
 // { linksSelector: "a" } không load lại trang
 const router = new Navigo("/", { linksSelector: "a" });
@@ -30,6 +33,15 @@ router.on({
     },
     "/call": () => {
         print(call.render());
+    },
+    "/signin": () => {
+        print(signin.router());
+    },
+    "/signup": () => {
+        print(signup.router());
+    },
+    "/dashboard": () => {
+        print(dashboard.router());
     },
 });
 router.resolve();

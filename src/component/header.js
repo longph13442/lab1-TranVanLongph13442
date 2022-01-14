@@ -1,6 +1,15 @@
 const header = {
     render() {
         return /* html */ `
+        <div class="h-6 bg-teal-700">
+        <div class="flex flex-1 float-right">
+        <a href="/dashboard" class="mx-2 text-amber-600">Dashboard/</a>
+        <a href="/signin" class="text-amber-600">Sign in/</a>
+        <a href="/signup" class="mx-2 text-amber-600">Sign up</a>
+        </div>
+        <!-- end -->
+        </div>
+        <!-- end side bar -->
         <div class="header">
             <div class="logo  h-20 bg-sky-700 py-2">
                 <img src="./img/logo.png" alt="" class="mx-auto">
