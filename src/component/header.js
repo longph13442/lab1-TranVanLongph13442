@@ -1,3 +1,5 @@
+import dataBanner from "../data-banner";
+
 const header = {
     render() {
         return /* html */ `
@@ -34,7 +36,10 @@ const header = {
             </div>
             <!-- end box -->
             <div class="banner">
-                <img src="./img/banner.jpg" alt="">
+            ${dataBanner.map((post) => /* html */ `
+                   <img src="${post.img}" alt="">
+            `)}
+                
             </div>
             <!-- end banner -->
         </div>
