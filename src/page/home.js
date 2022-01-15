@@ -1,9 +1,12 @@
 import data from "../data";
 import banner from "./banner";
+import header from "../component/header";
+import footer from "../component/footer";
 
 const home = {
     render() {
         return /* html */`<div class="content">
+        ${header.render()}
         ${banner.render()}
         <div class="title py-5 px-3">
             <h3 class="font-bold text-lg ">Tin tức học tập</h3>
@@ -47,7 +50,7 @@ const home = {
                 `).join("")}
         </div>
         <!-- end grid -->
-        
+        ${footer.render()}
     </div>
     <!-- end content -->`;
     },

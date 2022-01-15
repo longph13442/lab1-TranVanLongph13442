@@ -1,7 +1,10 @@
+import header from "../component/header";
+import footer from "../component/footer";
+
 const signin = {
     router() {
         return /* html */ `
-        
+        ${header.render()}
 <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
 <div class="max-w-md w-full space-y-8">
   <div>
@@ -58,7 +61,7 @@ const signin = {
   </form>
 </div>
 </div>
-
+${footer.render()}
         `;
     },
 };
