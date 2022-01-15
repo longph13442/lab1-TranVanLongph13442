@@ -1,8 +1,10 @@
 import data from "../data";
+import banner from "./banner";
 
 const home = {
     render() {
         return /* html */`<div class="content">
+        ${banner.render()}
         <div class="title py-5 px-3">
             <h3 class="font-bold text-lg ">Tin tức học tập</h3>
         </div>

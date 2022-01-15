@@ -37,13 +37,7 @@ const header = {
                 <!-- end search -->
             </div>
             <!-- end box -->
-            <div class="banner">
-            ${dataBanner.map((post) => /* html */ `
-                   <img src="${post.img}" alt="">
-            `)}
-                
-            </div>
-            <!-- end banner -->
+            
         </div>
         <!-- end header -->
          `;
