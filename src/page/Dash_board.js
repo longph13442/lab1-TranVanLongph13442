@@ -2,7 +2,7 @@ import table from "./table";
 import footer from "../component/footer";
 
 const dashboard = {
-    router() {
+    render() {
         return /* html */`
         <!-- This example requires Tailwind CSS v2.0+ -->
 <nav class="bg-gray-800">
@@ -100,10 +100,10 @@ const dashboard = {
   </div>
 </div>
 </nav>
- ${table.router()}
+ ${table.render()}
  ${footer.render()}
 
-    `;
+        `;
     },
 };
 export default dashboard;

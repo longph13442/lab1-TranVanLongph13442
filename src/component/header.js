@@ -23,7 +23,7 @@ const header = {
                 <div class="menu ">
                     <ul class="flex flex-nowrap ">
                         <li class="mx-5"><a href="/" class="">Trang chủ</a></li>
-                        <li class="mx-5"><a href="/edu" class="">Đào tạo</a></li>
+                        <li class="mx-5"><a href="/edu" class="">Tin tức</a></li>
                         <li class="mx-5"><a href="/action" class="">Hoạt động</a></li>
                         <li class="mx-5"><a href="/student" class="">Sinh viên</a></li>
                         <li class="mx-5"><a href="/call" class="">Liên hệ</a></li>

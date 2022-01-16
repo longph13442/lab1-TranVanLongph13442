@@ -16,7 +16,7 @@ const home = {
         ${data.map((post) => /* html */`
             <div class="item border-2 border-solid border-neutral-600 py-2 px-2">
                 <div class="item-img ">
-                   <img src="${post.img}" alt="" class="w-full" >
+                    <a href="/news/${post.id}"><img src="${post.img}" alt="" class="w-full" ></a>
                 </div>
                 <!-- end item img -->
                 <div class="item-content">
@@ -37,7 +37,7 @@ const home = {
         ${data.map((post) => /* html */`
             <div class="item border-2 border-solid border-neutral-600 py-2 px-2">
                 <div class="item-img ">
-                   <img src="${post.img}" alt="" class="w-full" >
+                <a href="/news/${post.id}"><img src="${post.img}" alt="" class="w-full" ></a>
                 </div>
                 <!-- end item img -->
                 <div class="item-content">

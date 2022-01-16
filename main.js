@@ -4,41 +4,43 @@ import action from "./src/page/action";
 import edu from "./src/page/edu";
 import student from "./src/page/student";
 import call from "./src/page/call";
-
 import signin from "./src/page/sign_in";
 import signup from "./src/page/sign_up";
-import dashboard from "./src/page/dashboard";
-
+import newsdetail from "./src/page/newsdetail";
+import dashboard from "./src/page/Dash_board";
 // { linksSelector: "a" } không load lại trang
 const router = new Navigo("/", { linksSelector: "a" });
-const print = (content) => {
-    document.getElementById("app").innerHTML = content;
+const print = (content, id) => {
+    document.getElementById("app").innerHTML = content.render(id);
 };
 
 router.on({
     "/": () => {
-        print(home.render());
+        print(home);
     },
     "/edu": () => {
-        print(edu.render());
+        print(edu);
     },
     "/action": () => {
-        print(action.render());
+        print(action);
     },
     "/student": () => {
-        print(student.render());
+        print(student);
     },
     "/call": () => {
-        print(call.render());
+        print(call);
     },
     "/signin": () => {
-        print(signin.router());
+        print(signin);
     },
     "/signup": () => {
-        print(signup.router());
+        print(signup);
     },
     "/dashboard": () => {
-        print(dashboard.router());
+        print(dashboard);
+    },
+    "/news/:id": ({ data: { id } }) => {
+        print(newsdetail, id);
     },
 });
 router.resolve();
