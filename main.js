@@ -7,7 +7,8 @@ import call from "./src/page/call";
 import signin from "./src/page/sign_in";
 import signup from "./src/page/sign_up";
 import newsdetail from "./src/page/newsdetail";
-import dashboard from "./src/page/Dash_board";
+import dashboard from "./src/page/admin/Dash_board";
+import news from "./src/page/admin/Dash_board_news";
 // { linksSelector: "a" } không load lại trang
 const router = new Navigo("/", { linksSelector: "a" });
 const print = (content, id) => {
@@ -41,6 +42,9 @@ router.on({
     },
     "/news/:id": ({ data: { id } }) => {
         print(newsdetail, id);
+    },
+    "/news": () => {
+        print(news);
     },
 });
 router.resolve();
