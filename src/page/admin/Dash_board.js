@@ -6,7 +6,9 @@ const dashboard = {
     render() {
         return /* html */`
           ${header2.render()}
+          
           ${table.render()}
+          
           ${footer.render()}
         `;
     },

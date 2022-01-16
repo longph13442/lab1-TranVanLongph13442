@@ -8,7 +8,8 @@ import signin from "./src/page/sign_in";
 import signup from "./src/page/sign_up";
 import newsdetail from "./src/page/newsdetail";
 import dashboard from "./src/page/admin/Dash_board";
-import news from "./src/page/admin/Dash_board_news";
+import edit from "./src/page/admin/table_edit";
+import add from "./src/page/admin/add._dashboard";
 // { linksSelector: "a" } không load lại trang
 const router = new Navigo("/", { linksSelector: "a" });
 const print = (content, id) => {
@@ -43,9 +44,13 @@ router.on({
     "/news/:id": ({ data: { id } }) => {
         print(newsdetail, id);
     },
-    "/news": () => {
-        print(news);
+    "/news_dashboard/:id": ({ data: { id } }) => {
+        print(edit, id);
     },
+    "/add": () => {
+        print(add);
+    },
+
 });
 router.resolve();
 
